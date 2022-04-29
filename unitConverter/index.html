@@ -1,41 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Unit Converter</title>
-</head>
-<body>
-  <h1>Metric/Imperial Unit Conversion</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Unit Converter</title>
+  </head>
+  <body>
+    <header>
+      <h1>Metric/Imperial Unit Conversion</h1>
 
-  <!--have the input form here-->
-  <form>
-    <label for="number">Enter Your Number Here for Conversion:</label>
-    <input type="text" inputmode="numeric" id="user-input" onclick="conversion()" />
-    <span id="userinput-placeholder"></span>
-  </form>
-  <!--display results here-->
-  <!-- input # unit = output # unit -->
-  <div>
-    <h3>Length (Meter/Feet)</h3>
-    <span id="number-input1"></span>
-    <span id="meter-to-feet"></span>
-    <span id="feet-to-meter"></span>
-    
-  </div>
-  <div>
-    <h3>Volume (Liters/Gallons)</h3>
-    <span id="number-input2"></span>
-    <span id="liters-to-gallons"></span>
-    <span id="gallons-to-meters"></span>
-    
-  </div>
-  <div>
-    <h3>Mass (kilograms/Pounds</h3>
-    <span id="number-input3"></span>
-    
-  </div>
-  <script type="text/javascript" src="./index.js"></script>
-</body>
+      <!--have the input form here-->
+      <form>
+        <!-- <label for="number">Enter Your Number Here for Conversion:</label> -->
+        <!-- <input type="text" inputmode="numeric" id="user-input" onclick="conversion()" /> -->
+        <span id="userinput-placeholder"></span>
+      </form>
+    </header>
+    <!--display results here-->
+    <!-- input # unit = output # unit -->
+    <div>
+      <h3>Length (Meter/Feet)</h3>
+      <span id="meter-to-feet"></span>
+      <span id="feet-to-meter"></span>
+    </div>
+    <div>
+      <h3>Volume (Liters/Gallons)</h3>
+      <span id="liters-to-gallons"></span>
+      <span id="gallons-to-meters"></span>
+    </div>
+    <div>
+      <h3>Mass (kilograms/Pounds</h3>
+      <span id="kilograms-to-pounds"></span>
+      <span id="pounds-to-kilograms"></span>
+    </div>
+    <script type="text/javascript" src="./index.js"></script>
+  </body>
 </html>
